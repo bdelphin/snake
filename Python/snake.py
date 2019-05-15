@@ -1,3 +1,52 @@
+"""
+---------------------------------------------------------------------
+Classic Snake Game designed for Raspberry Pi SenseHat. 
+Developed by Baptiste DELPHIN (baptiste.delphin@gmail.com)
+---------------------------------------------------------------------
+
+It was initialy built with Scratch2 for testing purposes (I've always
+wanted to try it, but  never found the time before).
+Disappointed with Scratch2 latency (even in turbo mode), I decided
+to remake the game with Python. Much faster it is.
+
+Feel free to improve the code if you wish, I'm not a Python guru and
+this was built in a really short time.
+
+---------------------------------------------------------------------
+
+* Instructions:
+
+SenseHat Python module is needed, simply install it with:
+    sudo apt-get install sense-hat
+Plug the SenseHat, power your Pi back on, and simply launch:
+    python snake.py
+
+The game is displayed on the LED matrix, you can control the snake
+with the tiny joystick.
+
+Highscore is stored in ~/.snake file.
+
+If you encounter any issue feel free to contact me via email.
+
+---------------------------------------------------------------------
+
+* GNU GPLv3 Disclaimer:
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License version 3 as 
+published by the Free Software Foundation.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+---------------------------------------------------------------------
+"""
+
 import time
 import os
 from sense_hat import SenseHat, ACTION_PRESSED, ACTION_HELD, ACTION_RELEASED
